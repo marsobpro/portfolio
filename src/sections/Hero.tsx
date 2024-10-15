@@ -1,11 +1,24 @@
 import Image from "next/image";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import grainImage from "@/assets/images/grain.jpg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      {/* Grain bg */}
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{ backgroundImage: `url(${grainImage.src})` }}
+      ></div>
+
+      {/* Inner ring */}
+      <div className="hero-ring size-[620px]"></div>
+      <div className="hero-ring size-[820px]"></div>
+      <div className="hero-ring size-[1020px]"></div>
+      <div className="hero-ring size-[1220px]"></div>
       <div className="container">
+        {/* Laptop container */}
         <div className="flex flex-col items-center">
           <Image
             className="size-[100px]"
@@ -19,6 +32,8 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
+
+        {/* Header and description */}
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
             Building Exceptional User Experiences
@@ -28,6 +43,8 @@ export const HeroSection = () => {
             applications. Let’s chat about your upcoming project!{" "}
           </p>
         </div>
+
+        {/* Buttons */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
