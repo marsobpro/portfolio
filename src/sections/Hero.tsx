@@ -2,6 +2,9 @@ import Image from "next/image";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import StarIcon from "@/assets/icons/star.svg";
+import { HeroOrbit } from "@/components/HeroOrbit";
+import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 export const HeroSection = () => {
   return (
@@ -12,13 +15,47 @@ export const HeroSection = () => {
         style={{ backgroundImage: `url(${grainImage.src})` }}
       ></div>
 
-      {/* Inner ring */}
+      {/*Rings - from inner outwards */}
       <div className="hero-ring size-[620px]"></div>
       <div className="hero-ring size-[820px]"></div>
       <div className="hero-ring size-[1020px]"></div>
       <div className="hero-ring size-[1220px]"></div>
+      {/* Stars */}
+      <HeroOrbit size={800} rotation={-72}>
+        <StarIcon className="size-28 text-emerald-300" />
+      </HeroOrbit>
+      <HeroOrbit size={550} rotation={20}>
+        <StarIcon className="size-12 text-emerald-300" />
+      </HeroOrbit>
+      <HeroOrbit size={590} rotation={98}>
+        <StarIcon className="size-8 text-emerald-300" />
+      </HeroOrbit>
+      {/* Sparkles */}
+      <HeroOrbit size={430} rotation={-14}>
+        <SparkleIcon className="size-8 text-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={430} rotation={79}>
+        <SparkleIcon className="size-5 text-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={530} rotation={178}>
+        <SparkleIcon className="size-10 text-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={710} rotation={144}>
+        <SparkleIcon className="size-14 text-emerald-300/20" />
+      </HeroOrbit>
+      {/* Circles */}
+      <HeroOrbit size={720} rotation={85}>
+        <div className="rounded-full size-3 bg-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={520} rotation={-41}>
+        <div className="rounded-full size-3 bg-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={650} rotation={-5}>
+        <div className="rounded-full size-3 bg-emerald-300/20" />
+      </HeroOrbit>
+
       <div className="container">
-        {/* Laptop container */}
+        {/* Laptop img container */}
         <div className="flex flex-col items-center">
           <Image
             className="size-[100px]"
