@@ -52,10 +52,10 @@ export const HeroSection = () => {
           <div className="rounded-full size-3 bg-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={520} rotation={-41}>
-          <div className="rounded-full size-3 bg-emerald-300/20" />
+          <div className="rounded-full size-2 bg-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={650} rotation={-5}>
-          <div className="rounded-full size-3 bg-emerald-300/20" />
+          <div className="rounded-full size-2 bg-emerald-300/20" />
         </HeroOrbit>
       </div>
 
