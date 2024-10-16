@@ -43,7 +43,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 lg:py-24">
       <div className="container ">
         <SectionHeader
           title={"What Clients Say about Me"}
@@ -52,14 +52,35 @@ export const TestimonialsSection = () => {
             "Don't just take my word for it. See what my clients have to say about my work."
           }
         />
-        {testimonials.map(testimonial => (
-          <Card key={testimonial.name}>
-            <Image src={testimonial.avatar} alt={testimonial.name} />
-            <div className="">{testimonial.name}</div>
-            <div className="">{testimonial.position}</div>
-            <p className="">{testimonial.text}</p>
-          </Card>
-        ))}
+        <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-8 flex-none">
+            {testimonials.map(testimonial => (
+              <Card
+                className="max-w-xs md:p-8 md:max-w-md"
+                key={testimonial.name}
+              >
+                <div className="flex gap-4 items-center">
+                  <div className="size-14 flex-shrink-0 bg-gray-700 inline-flex items-center rounded-full justify-center">
+                    <Image
+                      className="max-h-full"
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                    />
+                  </div>
+                  <div className="">
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className="text-sm text-white/40">
+                      {testimonial.position}
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 md:mt-6 text-sm md:text-base">
+                  {testimonial.text}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
