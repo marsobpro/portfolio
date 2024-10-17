@@ -63,70 +63,74 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           {/* Books */}
-          <Card className="h-[320px]">
-            <CardHeader
-              title="My reads"
-              description="Explore the books shaping my perspectives."
-            />
-            <div className="w-40 mx-auto mt-8">
-              <Image src={bookImage} alt="Book cover" />
-            </div>
-          </Card>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
+            <Card className="h-[320px] md:col-span-2">
+              <CardHeader
+                title="My reads"
+                description="Explore the books shaping my perspectives."
+              />
+              <div className="w-40 mx-auto mt-2 md:mt-0">
+                <Image src={bookImage} alt="Book cover" />
+              </div>
+            </Card>
 
-          {/* Toolbox */}
-          <Card className="h-[320px] p-0 ">
-            <CardHeader
-              title="My toolbox"
-              description="Explore the technologies and tools I use to craft exceptional
+            {/* Toolbox */}
+            <Card className="h-[320px] md:col-span-3">
+              <CardHeader
+                title="My toolbox"
+                description="Explore the technologies and tools I use to craft exceptional
                 digital experiences"
-              className="px-6 pt-6"
-            />
-            <ToolboxItems items={toolboxItems} className="mt-6" />
-            <ToolboxItems
-              items={toolboxItems}
-              className="mt-6"
-              itemsWrapperClassname="-translate-x-1/2"
-            />
-          </Card>
+                className=""
+              />
+              <ToolboxItems items={toolboxItems} className="" />
+              <ToolboxItems
+                items={toolboxItems}
+                className="mt-6"
+                itemsWrapperClassname="-translate-x-1/2"
+              />
+            </Card>
+          </div>
 
           {/* Hobbies */}
-          <Card className="h-[320px] p-0 flex flex-col">
-            <CardHeader
-              title="Beyond the code"
-              description="Explore my interests and hobbies beyond the digital realm"
-              className="px-6 py-6"
-            />
-            <div className="relative flex-1">
-              {hobbies.map(hobby => (
-                <div
-                  className="absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
-                  style={{ left: hobby.left, top: hobby.top }}
-                  key={hobby.title}
-                >
-                  <span className="font-medium text-gray-950">
-                    {hobby.title}
-                  </span>
-                  <span>{hobby.emoji}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
-
-          {/* Location */}
-          <Card className="h-[320px] p-0 relative">
-            <Image
-              className="h-full w-full object-cover object-left-top"
-              src={mapImage}
-              alt="map"
-            />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:rounded-full after:-outline-offset-2 after:outline-gray-950/30">
-              <Image
-                className="size-20"
-                src={smileMemoji}
-                alt="smiling memoji"
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
+            <Card className="h-[320px] p-0 flex flex-col col-span-3">
+              <CardHeader
+                title="Beyond the code"
+                description="Explore my interests and hobbies beyond the digital realm"
+                className="px-6 py-6"
               />
-            </div>
-          </Card>
+              <div className="relative flex-1">
+                {hobbies.map(hobby => (
+                  <div
+                    className="absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
+                    style={{ left: hobby.left, top: hobby.top }}
+                    key={hobby.title}
+                  >
+                    <span className="font-medium text-gray-950">
+                      {hobby.title}
+                    </span>
+                    <span>{hobby.emoji}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            {/* Location */}
+            <Card className="h-[320px] p-0 relative col-span-2">
+              <Image
+                className="h-full w-full object-cover object-left-top"
+                src={mapImage}
+                alt="map"
+              />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:rounded-full after:-outline-offset-2 after:outline-gray-950/30">
+                <Image
+                  className="size-20"
+                  src={smileMemoji}
+                  alt="smiling memoji"
+                />
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
