@@ -54,7 +54,7 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -63,8 +63,8 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           {/* Books */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="h-[320px] md:col-span-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My reads"
                 description="Explore the books shaping my perspectives."
@@ -75,7 +75,7 @@ export const AboutSection = () => {
             </Card>
 
             {/* Toolbox */}
-            <Card className="h-[320px] md:col-span-3">
+            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My toolbox"
                 description="Explore the technologies and tools I use to craft exceptional
@@ -92,8 +92,8 @@ export const AboutSection = () => {
           </div>
 
           {/* Hobbies */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="h-[320px] p-0 flex flex-col col-span-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the code"
                 description="Explore my interests and hobbies beyond the digital realm"
@@ -116,7 +116,7 @@ export const AboutSection = () => {
             </Card>
 
             {/* Location */}
-            <Card className="h-[320px] p-0 relative col-span-2">
+            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
                 className="h-full w-full object-cover object-left-top"
                 src={mapImage}
