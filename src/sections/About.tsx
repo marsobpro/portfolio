@@ -56,7 +56,7 @@ const hobbies = [
 export const AboutSection = () => {
   const constraintRef = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -108,7 +108,7 @@ export const AboutSection = () => {
               <div className="relative flex-1" ref={constraintRef}>
                 {hobbies.map(hobby => (
                   <motion.div
-                    className="absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
+                    className="absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 cursor-pointer"
                     style={{ left: hobby.left, top: hobby.top }}
                     key={hobby.title}
                     drag
@@ -144,6 +144,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

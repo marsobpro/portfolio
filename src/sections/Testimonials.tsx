@@ -8,7 +8,7 @@ import Card from "@/components/Card";
 import Image from "next/image";
 import { Fragment } from "react";
 
-const testimonials = [
+const referrals = [
   {
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
@@ -41,9 +41,9 @@ const testimonials = [
   },
 ];
 
-export const TestimonialsSection = () => {
+export const Referrals = () => {
   return (
-    <div className="py-16 lg:py-24">
+    <section className="py-16 lg:py-24" id="referrals">
       <div className="container ">
         <SectionHeader
           title={"What Clients Say about Me"}
@@ -56,28 +56,28 @@ export const TestimonialsSection = () => {
           <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
-                {testimonials.map(testimonial => (
+                {referrals.map(referral => (
                   <Card
                     className="max-w-xs md:p-8 md:max-w-md p-6 hover:-rotate-3 transition duration-300"
-                    key={testimonial.name}
+                    key={referral.name}
                   >
                     <div className="flex gap-4 items-center">
                       <div className="size-14 flex-shrink-0 bg-gray-700 inline-flex items-center rounded-full justify-center">
                         <Image
                           className="max-h-full"
-                          src={testimonial.avatar}
-                          alt={testimonial.name}
+                          src={referral.avatar}
+                          alt={referral.name}
                         />
                       </div>
                       <div className="">
-                        <div className="font-semibold">{testimonial.name}</div>
+                        <div className="font-semibold">{referral.name}</div>
                         <div className="text-sm text-white/40">
-                          {testimonial.position}
+                          {referral.position}
                         </div>
                       </div>
                     </div>
                     <p className="mt-4 md:mt-6 text-sm md:text-base">
-                      {testimonial.text}
+                      {referral.text}
                     </p>
                   </Card>
                 ))}
@@ -86,6 +86,6 @@ export const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
