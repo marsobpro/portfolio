@@ -7,6 +7,9 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+// Hero
+import SparkleIcon from "@/assets/icons/sparkle.svg";
+import StarIcon from "@/assets/icons/star.svg";
 
 //Header
 
@@ -137,5 +140,113 @@ export const referrals: Referral[] = [
     position: "Director of IT @ MegaCorp",
     text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
     avatar: memojiAvatar5,
+  },
+];
+
+// Hero
+
+export const orbitConfig = [
+  {
+    size: 430,
+    rotation: -14,
+    orbitDuration: "28s",
+    icon: SparkleIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 440,
+    rotation: 79,
+    orbitDuration: "32s",
+    icon: SparkleIcon,
+    iconSize: 5,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 520,
+    rotation: -41,
+    orbitDuration: "36s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+  },
+  {
+    size: 530,
+    rotation: 178,
+    orbitDuration: "36s",
+    icon: SparkleIcon,
+    iconSize: 10,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 550,
+    rotation: 20,
+    orbitDuration: "38s",
+    icon: StarIcon,
+    iconSize: 12,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 590,
+    rotation: 98,
+    orbitDuration: "40s",
+    icon: StarIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 650,
+    rotation: -5,
+    orbitDuration: "42s",
+    icon: "circle",
+    iconSize: 2,
+    shouldOrbit: true,
+  },
+  {
+    size: 710,
+    rotation: 144,
+    orbitDuration: "44s",
+    icon: SparkleIcon,
+    iconSize: 20,
+    shouldOrbit: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 720,
+    rotation: 85,
+    orbitDuration: "46s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 800,
+    rotation: -72,
+    orbitDuration: "48s",
+    icon: StarIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "10s",
+  },
+  {
+    size: 800,
+    rotation: 85,
+    orbitDuration: "22s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+    spinDuration: "6s",
   },
 ];

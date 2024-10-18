@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { tapeWords } from "@/utils/constants";
-import TapeItem from "@/components/TapeSection/TapeItem";
+import TapeItem from "@/components/Tape/TapeItem";
 
 export const TapeSection = () => {
   const tapeContent = useMemo(

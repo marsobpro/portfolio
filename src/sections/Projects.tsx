@@ -3,7 +3,7 @@ import SectionHeader from "@/components/SectionHeader";
 import { useMemo } from "react";
 import { portfolioProjects } from "@/utils/constants";
 import Card from "@/components/Card/Card";
-import ProjectCardContent from "@/components/ProjectsSection/ProjectCardContent";
+import ProjectCardContent from "@/components/Projects/ProjectCardContent";
 
 export const ProjectsSection = () => {
   const projectCards = useMemo(
