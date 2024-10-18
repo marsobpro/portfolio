@@ -15,6 +15,9 @@ import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const toolboxItems = [
   {
@@ -53,6 +56,65 @@ const hobbies = [
   { title: "Reading", emoji: "📖", left: "45%", top: "70%" },
 ];
 
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 700,
+  slidesToShow: 1.1,
+  slidesToScroll: 1,
+  className: "books-slider",
+};
+
+const CustomPrevArrow = (props: any) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="absolute -left-10 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
+      onClick={onClick}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </div>
+  );
+};
+
+const CustomNextArrow = (props: any) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="absolute -right-10 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
+      onClick={onClick}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
+  );
+};
+
 export const AboutSection = () => {
   const constraintRef = useRef(null);
   return (
@@ -63,16 +125,30 @@ export const AboutSection = () => {
           title="A Glimpse Into My World"
           description="Learn more about who I am, what I do, and what inspires me"
         />
-        <div className="mt-20 flex flex-col gap-8">
+        <div className="mt-20 flex flex-col gap-8 ">
           {/* Books */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3 ">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My reads"
                 description="Explore the books shaping my perspectives."
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+              <div className="w-48 mx-auto mt-2 md:mt-0 relative ">
+                <Slider
+                  {...settings}
+                  prevArrow={<CustomPrevArrow />}
+                  nextArrow={<CustomNextArrow />}
+                >
+                  {[...new Array(3)].fill(0).map((_, index) => (
+                    <div className="relative h-40 after:absolute after:inset-0 after:content[''] after:bg-gradient-to-t after:from-gray-900 after:to-gray-5 after:opacity-90 overflow-hidden ">
+                      <Image
+                        className="absolute inset-0"
+                        src={bookImage}
+                        alt="Book cover"
+                      />
+                    </div>
+                  ))}
+                </Slider>
               </div>
             </Card>
 

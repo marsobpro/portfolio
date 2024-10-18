@@ -19,4 +19,18 @@
   html {
     scroll-behavior: smooth;
   }
+  .books-slider .slick-list {
+    margin: 0 -7px;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+
+  .books-slider .slick-slide > div {
+    padding: 0 10px;
+  }
 }
