@@ -3,8 +3,8 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionHeader from "@/components/SectionHeader";
-import Card from "@/components/Card";
-import CardHeader from "@/components/CardHeader";
+import Card from "@/components/Card/Card";
+import CardHeader from "@/components/Card/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
 import SlickSlider from "@/components/SlickSlider";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
@@ -84,7 +84,10 @@ export const AboutSection = () => {
               <div className="w-48 mx-auto mt-2 md:mt-0 relative ">
                 <SlickSlider settings={booksSliderSettings}>
                   {[...new Array(3)].fill(0).map((_, index) => (
-                    <div className="relative h-40 after:absolute after:inset-0 after:content[''] after:bg-gradient-to-t after:from-gray-900 after:to-gray-5 after:opacity-90 overflow-hidden ">
+                    <div
+                      className="relative h-40 after:absolute after:inset-0 after:content[''] after:bg-gradient-to-t after:from-gray-900 after:to-gray-5 after:opacity-90 overflow-hidden "
+                      key={index}
+                    >
                       <Image
                         className="absolute inset-0"
                         src={bookImage}
