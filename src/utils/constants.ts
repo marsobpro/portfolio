@@ -77,3 +77,18 @@ export const portfolioProjects: Project[] = [
     image: aiStartupLandingPage,
   },
 ];
+
+// Tape
+export const tapeWords: string[] = [
+  "Performant",
+  "Accessible",
+  "Secure",
+  "Interactive",
+  "Scalable",
+  "User Friendly",
+  "Responsive",
+  "Optimized",
+  "Reliable",
+  "Efficient",
+  "Innovative",
+];
