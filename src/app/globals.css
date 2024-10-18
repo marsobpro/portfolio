@@ -19,6 +19,8 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Books SlickSlider gradient */
   .books-slider .slick-list {
     margin: 0 -7px;
     mask-image: linear-gradient(
