@@ -1,6 +1,15 @@
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 
+interface HeroOrbitProps {
+  size: number;
+  rotation: number;
+  orbitDuration?: string;
+  shouldOrbit?: boolean;
+  shouldSpin?: boolean;
+  spinDuration?: string;
+}
+
 export const HeroOrbit = ({
   children,
   size,
@@ -9,14 +18,7 @@ export const HeroOrbit = ({
   orbitDuration,
   shouldSpin = false,
   spinDuration,
-}: PropsWithChildren<{
-  size: number;
-  rotation: number;
-  orbitDuration?: string;
-  shouldOrbit?: boolean;
-  shouldSpin?: boolean;
-  spinDuration?: string;
-}>) => {
+}: PropsWithChildren<HeroOrbitProps>) => {
   return (
     <div
       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20"

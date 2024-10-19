@@ -25,7 +25,7 @@ import GithubIcon from "@/assets/icons/github.svg";
 export interface NavItem {
   title: string;
   href: string;
-  external?: boolean;
+  isExternal?: boolean;
   isHighlighted?: boolean;
 }
 
@@ -36,7 +36,7 @@ export const navItems: NavItem[] = [
   {
     title: "Contact",
     href: "https://www.linkedin.com/in/marcin-sobieraj/",
-    external: true,
+    isExternal: true,
     isHighlighted: true,
   },
 ];
@@ -303,4 +303,16 @@ export const hobbies: Hobby[] = [
   { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
   { title: "Fitness", emoji: "🏋️‍♂️", left: "5%", top: "65%" },
   { title: "Reading", emoji: "📖", left: "45%", top: "70%" },
+];
+
+// Footer
+
+export const footerLinks: NavItem[] = [
+  {
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/marcin-sobieraj/",
+    isExternal: true,
+  },
+  { title: "Email", href: "mailto:marsobpro@gmail.com" },
+  { title: "Github", href: "https://github.com/marsobpro", isExternal: true },
 ];

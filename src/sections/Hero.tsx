@@ -29,8 +29,8 @@ export const HeroSection = () => {
       {[620, 820, 1020, 1220].map((size, index) => (
         <div
           key={index}
-          className={`hero-ring size-[${size}px]`}
-          aria-hidden="true"
+          className="hero-ring"
+          style={{ width: `${size}px`, height: `${size}px` }}
         />
       ))}
 

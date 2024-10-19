@@ -1,31 +1,5 @@
-import { NavItem, navItems } from "@/utils/constants";
-import Link from "next/link";
-import { memo } from "react";
-
-const NavLink = memo(
-  ({
-    item: { external, href, title },
-    className,
-  }: {
-    item: NavItem;
-    className: string;
-  }) => {
-    return external ? (
-      <a
-        className={className}
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {title}
-      </a>
-    ) : (
-      <Link className={className} href={href} passHref>
-        {title}
-      </Link>
-    );
-  }
-);
+import CustomLink from "@/components/CustomLink";
+import { navItems } from "@/utils/constants";
 
 export const Header = () => {
   const getLinkClassName = (isHighlighted: boolean) =>
@@ -38,7 +12,9 @@ export const Header = () => {
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         {navItems.map(item => {
           const className = getLinkClassName(item.isHighlighted || false);
-          return <NavLink item={item} className={className} key={item.title} />;
+          return (
+            <CustomLink item={item} className={className} key={item.title} />
+          );
         })}
       </nav>
     </header>
