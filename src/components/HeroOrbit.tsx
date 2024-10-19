@@ -18,7 +18,10 @@ export const HeroOrbit = ({
   spinDuration?: string;
 }>) => {
   return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20  ">
+    <div
+      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20"
+      aria-hidden="true"
+    >
       <div
         className={twMerge(!!shouldOrbit && "animate-spin")}
         style={{ animationDuration: orbitDuration }}
