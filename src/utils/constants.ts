@@ -288,7 +288,14 @@ export const toolboxItems = [
   },
 ];
 
-export const hobbies = [
+export interface Hobby {
+  title: string;
+  emoji: string;
+  left: string;
+  top: string;
+}
+
+export const hobbies: Hobby[] = [
   { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
   { title: "Photography", emoji: "📸", left: "50%", top: "5%" },
   { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
