@@ -1,7 +1,9 @@
 import { StaticImageData } from "next/image";
+// Projects
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+// Referrals
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
@@ -10,6 +12,13 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 // Hero
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import StarIcon from "@/assets/icons/star.svg";
+// About
+import JavascriptIcon from "@/assets/icons/square-js.svg";
+import HTMLIcon from "@/assets/icons/html5.svg";
+import CssIcon from "@/assets/icons/css3.svg";
+import ReactIcon from "@/assets/icons/react.svg";
+import ChromeIcon from "@/assets/icons/chrome.svg";
+import GithubIcon from "@/assets/icons/github.svg";
 
 //Header
 
@@ -29,6 +38,114 @@ export const navItems: NavItem[] = [
     href: "https://www.linkedin.com/in/marcin-sobieraj/",
     external: true,
     isHighlighted: true,
+  },
+];
+
+// Hero
+
+export const orbitConfig = [
+  {
+    size: 430,
+    rotation: -14,
+    orbitDuration: "28s",
+    icon: SparkleIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 440,
+    rotation: 79,
+    orbitDuration: "32s",
+    icon: SparkleIcon,
+    iconSize: 5,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 520,
+    rotation: -41,
+    orbitDuration: "36s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+  },
+  {
+    size: 530,
+    rotation: 178,
+    orbitDuration: "36s",
+    icon: SparkleIcon,
+    iconSize: 10,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "3s",
+  },
+  {
+    size: 550,
+    rotation: 20,
+    orbitDuration: "38s",
+    icon: StarIcon,
+    iconSize: 12,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 590,
+    rotation: 98,
+    orbitDuration: "40s",
+    icon: StarIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 650,
+    rotation: -5,
+    orbitDuration: "42s",
+    icon: "circle",
+    iconSize: 2,
+    shouldOrbit: true,
+  },
+  {
+    size: 710,
+    rotation: 144,
+    orbitDuration: "44s",
+    icon: SparkleIcon,
+    iconSize: 20,
+    shouldOrbit: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 720,
+    rotation: 85,
+    orbitDuration: "46s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+    spinDuration: "6s",
+  },
+  {
+    size: 800,
+    rotation: -72,
+    orbitDuration: "48s",
+    icon: StarIcon,
+    iconSize: 8,
+    shouldOrbit: true,
+    shouldSpin: true,
+    spinDuration: "10s",
+  },
+  {
+    size: 800,
+    rotation: 85,
+    orbitDuration: "22s",
+    icon: "circle",
+    iconSize: 4,
+    shouldOrbit: true,
+    spinDuration: "6s",
   },
 ];
 
@@ -143,110 +260,40 @@ export const referrals: Referral[] = [
   },
 ];
 
-// Hero
+// About me
+export const toolboxItems = [
+  {
+    title: "JavaScript",
+    iconType: JavascriptIcon,
+  },
+  {
+    title: "HTML5",
+    iconType: HTMLIcon,
+  },
+  {
+    title: "CSS3",
+    iconType: CssIcon,
+  },
+  {
+    title: "React",
+    iconType: ReactIcon,
+  },
+  {
+    title: "Chrome",
+    iconType: ChromeIcon,
+  },
+  {
+    title: "Github",
+    iconType: GithubIcon,
+  },
+];
 
-export const orbitConfig = [
-  {
-    size: 430,
-    rotation: -14,
-    orbitDuration: "28s",
-    icon: SparkleIcon,
-    iconSize: 8,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "3s",
-  },
-  {
-    size: 440,
-    rotation: 79,
-    orbitDuration: "32s",
-    icon: SparkleIcon,
-    iconSize: 5,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "3s",
-  },
-  {
-    size: 520,
-    rotation: -41,
-    orbitDuration: "36s",
-    icon: "circle",
-    iconSize: 4,
-    shouldOrbit: true,
-  },
-  {
-    size: 530,
-    rotation: 178,
-    orbitDuration: "36s",
-    icon: SparkleIcon,
-    iconSize: 10,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "3s",
-  },
-  {
-    size: 550,
-    rotation: 20,
-    orbitDuration: "38s",
-    icon: StarIcon,
-    iconSize: 12,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "6s",
-  },
-  {
-    size: 590,
-    rotation: 98,
-    orbitDuration: "40s",
-    icon: StarIcon,
-    iconSize: 8,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "6s",
-  },
-  {
-    size: 650,
-    rotation: -5,
-    orbitDuration: "42s",
-    icon: "circle",
-    iconSize: 2,
-    shouldOrbit: true,
-  },
-  {
-    size: 710,
-    rotation: 144,
-    orbitDuration: "44s",
-    icon: SparkleIcon,
-    iconSize: 20,
-    shouldOrbit: true,
-    spinDuration: "6s",
-  },
-  {
-    size: 720,
-    rotation: 85,
-    orbitDuration: "46s",
-    icon: "circle",
-    iconSize: 4,
-    shouldOrbit: true,
-    spinDuration: "6s",
-  },
-  {
-    size: 800,
-    rotation: -72,
-    orbitDuration: "48s",
-    icon: StarIcon,
-    iconSize: 8,
-    shouldOrbit: true,
-    shouldSpin: true,
-    spinDuration: "10s",
-  },
-  {
-    size: 800,
-    rotation: 85,
-    orbitDuration: "22s",
-    icon: "circle",
-    iconSize: 4,
-    shouldOrbit: true,
-    spinDuration: "6s",
-  },
+export const hobbies = [
+  { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
+  { title: "Photography", emoji: "📸", left: "50%", top: "5%" },
+  { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
+  { title: "Gaming", emoji: "🎮", left: "10%", top: "35%" },
+  { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
+  { title: "Fitness", emoji: "🏋️‍♂️", left: "5%", top: "65%" },
+  { title: "Reading", emoji: "📖", left: "45%", top: "70%" },
 ];

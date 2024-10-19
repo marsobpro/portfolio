@@ -1,5 +1,4 @@
-import React, { memo } from "react";
-import StarIcon from "@/assets/icons/star.svg";
+import React from "react";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { orbitConfig } from "@/utils/constants";
