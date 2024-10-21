@@ -17,7 +17,7 @@ const HobbyBubble = ({
     drag
     dragConstraints={constraintsRef}
   >
-    <span className="font-medium text-gray-950">{title}</span>
+    <span className="font-medium text-gray-950 text-nowrap">{title}</span>
     <span>{emoji}</span>
   </motion.div>
 );
