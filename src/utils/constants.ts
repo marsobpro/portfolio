@@ -24,6 +24,11 @@ import NextjsIcon from "@/assets/icons/nextjs.svg";
 import SassIcon from "@/assets/icons/sass.svg";
 import TailwindIcon from "@/assets/icons/tailwind.svg";
 import TSIcon from "@/assets/icons/ts.svg";
+import goldfinchCover from "@/assets/images/goldfinch.png";
+import millionCover from "@/assets/images/million.png";
+import mojoCover from "@/assets/images/mojo.png";
+import hungerCover from "@/assets/images/hunger.png";
+import habitsCover from "@/assets/images/habits.png";
 
 //Header
 export interface NavItem {
@@ -323,6 +328,34 @@ export const hobbies: Hobby[] = [
   { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
   { title: "Fitness", emoji: "🏋️‍♂️", left: "5%", top: "65%" },
   { title: "Reading", emoji: "📖", left: "45%", top: "70%" },
+];
+
+interface Book {
+  src: StaticImageData | string;
+  title: string;
+}
+
+export const books: Book[] = [
+  {
+    src: goldfinchCover,
+    title: "The Goldfinch",
+  },
+  {
+    src: habitsCover,
+    title: "Atomic Habits",
+  },
+  {
+    src: hungerCover,
+    title: "Hunger",
+  },
+  {
+    src: millionCover,
+    title: "Million Dollar Weekend",
+  },
+  {
+    src: mojoCover,
+    title: "Total Cat Mojo: The Ultimate Guide to Life with Your Cat",
+  },
 ];
 
 // Footer
