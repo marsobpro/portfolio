@@ -17,8 +17,13 @@ import JavascriptIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
+import FigmaIcon from "@/assets/icons/figma.svg";
+import NextjsIcon from "@/assets/icons/nextjs.svg";
+import SassIcon from "@/assets/icons/sass.svg";
+import TailwindIcon from "@/assets/icons/tailwind.svg";
+import TSIcon from "@/assets/icons/ts.svg";
 
 //Header
 export interface NavItem {
@@ -253,7 +258,7 @@ export const referrals: Referral[] = [
 ];
 
 // About me
-export const toolboxItems = [
+export const technologyGroupA = [
   {
     title: "JavaScript",
     iconType: JavascriptIcon,
@@ -271,12 +276,35 @@ export const toolboxItems = [
     iconType: ReactIcon,
   },
   {
-    title: "Chrome",
-    iconType: ChromeIcon,
+    title: "Sass",
+    iconType: SassIcon,
   },
+];
+
+export const technologyGroupB = [
   {
     title: "Github",
     iconType: GithubIcon,
+  },
+  {
+    title: "MongoDB",
+    iconType: MongoDBIcon,
+  },
+  {
+    title: "Figma",
+    iconType: FigmaIcon,
+  },
+  {
+    title: "Next.js",
+    iconType: NextjsIcon,
+  },
+  {
+    title: "Tailwind",
+    iconType: TailwindIcon,
+  },
+  {
+    title: "TypeScript",
+    iconType: TSIcon,
   },
 ];
 

@@ -16,7 +16,11 @@ const HobbiesCard = () => {
       />
       <div className="relative flex-1" ref={constraintRef}>
         {hobbies.map(hobby => (
-          <HobbyBubble hobby={hobby} constraintsRef={constraintRef} />
+          <HobbyBubble
+            hobby={hobby}
+            constraintsRef={constraintRef}
+            key={hobby.title}
+          />
         ))}
       </div>
     </Card>

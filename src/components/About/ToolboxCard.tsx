@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card/Card";
 import CardHeader from "../Card/CardHeader";
 import ToolboxItems from "../ToolboxItems";
-import { toolboxItems } from "@/utils/constants";
+import { technologyGroupA, technologyGroupB } from "@/utils/constants";
 
 const ToolboxCard = () => {
   return (
@@ -14,12 +14,12 @@ const ToolboxCard = () => {
         className=""
       />
       <ToolboxItems
-        items={toolboxItems}
+        items={technologyGroupA}
         className=""
         itemsWrapperClassname="animate-move-left [animation-duration:30s]"
       />
       <ToolboxItems
-        items={toolboxItems}
+        items={technologyGroupB}
         className="mt-6"
         itemsWrapperClassname="animate-move-right [animation-duration:20s]"
       />
