@@ -21,7 +21,6 @@ import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 
 //Header
-
 export interface NavItem {
   title: string;
   href: string;
@@ -42,13 +41,18 @@ export const navItems: NavItem[] = [
 ];
 
 // Hero
+const icons = {
+  circle: "circle",
+  sparkle: SparkleIcon,
+  star: StarIcon,
+};
 
 export const orbitConfig = [
   {
     size: 430,
     rotation: -14,
-    orbitDuration: "28s",
-    icon: SparkleIcon,
+    orbitDuration: "38s",
+    icon: icons.sparkle,
     iconSize: 8,
     shouldOrbit: true,
     shouldSpin: true,
@@ -57,8 +61,8 @@ export const orbitConfig = [
   {
     size: 440,
     rotation: 79,
-    orbitDuration: "32s",
-    icon: SparkleIcon,
+    orbitDuration: "42s",
+    icon: icons.sparkle,
     iconSize: 5,
     shouldOrbit: true,
     shouldSpin: true,
@@ -67,7 +71,7 @@ export const orbitConfig = [
   {
     size: 520,
     rotation: -41,
-    orbitDuration: "36s",
+    orbitDuration: "46s",
     icon: "circle",
     iconSize: 4,
     shouldOrbit: true,
@@ -75,8 +79,8 @@ export const orbitConfig = [
   {
     size: 530,
     rotation: 178,
-    orbitDuration: "36s",
-    icon: SparkleIcon,
+    orbitDuration: "42s",
+    icon: icons.sparkle,
     iconSize: 10,
     shouldOrbit: true,
     shouldSpin: true,
@@ -85,7 +89,7 @@ export const orbitConfig = [
   {
     size: 550,
     rotation: 20,
-    orbitDuration: "38s",
+    orbitDuration: "48s",
     icon: StarIcon,
     iconSize: 12,
     shouldOrbit: true,
@@ -95,7 +99,7 @@ export const orbitConfig = [
   {
     size: 590,
     rotation: 98,
-    orbitDuration: "40s",
+    orbitDuration: "50s",
     icon: StarIcon,
     iconSize: 8,
     shouldOrbit: true,
@@ -105,7 +109,7 @@ export const orbitConfig = [
   {
     size: 650,
     rotation: -5,
-    orbitDuration: "42s",
+    orbitDuration: "52s",
     icon: "circle",
     iconSize: 2,
     shouldOrbit: true,
@@ -113,8 +117,8 @@ export const orbitConfig = [
   {
     size: 710,
     rotation: 144,
-    orbitDuration: "44s",
-    icon: SparkleIcon,
+    orbitDuration: "54s",
+    icon: icons.sparkle,
     iconSize: 20,
     shouldOrbit: true,
     spinDuration: "6s",
@@ -122,7 +126,7 @@ export const orbitConfig = [
   {
     size: 720,
     rotation: 85,
-    orbitDuration: "46s",
+    orbitDuration: "56s",
     icon: "circle",
     iconSize: 4,
     shouldOrbit: true,
@@ -131,7 +135,7 @@ export const orbitConfig = [
   {
     size: 800,
     rotation: -72,
-    orbitDuration: "48s",
+    orbitDuration: "58s",
     icon: StarIcon,
     iconSize: 8,
     shouldOrbit: true,
@@ -141,7 +145,7 @@ export const orbitConfig = [
   {
     size: 800,
     rotation: 85,
-    orbitDuration: "22s",
+    orbitDuration: "32s",
     icon: "circle",
     iconSize: 4,
     shouldOrbit: true,
@@ -229,34 +233,22 @@ export interface Referral {
 
 export const referrals: Referral[] = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Karina Kupp",
+    position: "Creator of Chill Subs",
+    text: `(...)  He's fantastic with frontend, <strong>always pays attention to the little details, responsiveness and animations</strong>, and is great at communication if anything needs clarification. </br></br> He also immediately felt part of the team, making everyone laugh from the first Slack exchanges and every daily meeting :) <br/></br> Working at a startup is an intense experience with plans and processes changing all the time, and I really appreciate Marcin being there for the ride and adapting and growing with us <3`,
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Natalia Filip",
+    position: "Senior Recruiter",
+    text: "I had a real pleasure to work with Marcin. He is very proactive, communicative and open minded person. :)<br/><br/> (...) He has very creative approach, he's not afraid to take initiative. I definitely recommend Marcin, he is great colleague! :)",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Diana Getka",
+    position: "International Business Graduate",
+    text: "I had a pleasure to work with Marcin for couple of months. He is always eager to learn new things, very open-minded, focused on development. <br/>He always thinks what would be <strong>the best for the whole team.</strong> Moreover, he’s is a great English speaker. I strongly recommend to work with Marcin! :)",
     avatar: memojiAvatar3,
-  },
-  {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
   },
 ];
 
@@ -307,12 +299,18 @@ export const hobbies: Hobby[] = [
 
 // Footer
 
+const personalURLs = {
+  linkedin: "https://www.linkedin.com/in/marcin-sobieraj/",
+  github: "https://github.com/marsobpro",
+  email: "mailto:marsobpro@gmail.com",
+};
+
 export const footerLinks: NavItem[] = [
   {
     title: "Linkedin",
-    href: "https://www.linkedin.com/in/marcin-sobieraj/",
+    href: personalURLs.linkedin,
     isExternal: true,
   },
-  { title: "Email", href: "mailto:marsobpro@gmail.com" },
-  { title: "Github", href: "https://github.com/marsobpro", isExternal: true },
+  { title: "Email", href: personalURLs.email },
+  { title: "Github", href: personalURLs.github, isExternal: true },
 ];

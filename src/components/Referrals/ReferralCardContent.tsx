@@ -7,15 +7,17 @@ const ReferralCardContent = ({ referral }: { referral: Referral }) => {
   return (
     <>
       <div className="flex gap-4 items-center">
-        <div className="size-14 flex-shrink-0 bg-gray-700 inline-flex items-center rounded-full justify-center">
+        {/* <div className="size-14 flex-shrink-0 bg-gray-700 inline-flex items-center rounded-full justify-center">
           <Image className="max-h-full" src={avatar} alt={name} />
-        </div>
+        </div> */}
         <div className="">
           <div className="font-semibold">{name}</div>
           <div className="text-sm text-white/40">{position}</div>
         </div>
       </div>
-      <p className="mt-4 md:mt-6 text-sm md:text-base">{text}</p>
+      <p className="mt-4 md:mt-6 text-sm md:text-base max-h-[180px] overflow-y-scroll">
+        <p dangerouslySetInnerHTML={{ __html: text }} />
+      </p>
     </>
   );
 };

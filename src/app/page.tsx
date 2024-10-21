@@ -12,12 +12,21 @@ export default function Home() {
     <div>
       <Header />
       <HeroSection />
+      <Referrals />
+
+      <ProjectsSection />
+      <TapeSection />
+      <AboutSection />
+      <ContactSection />
+      <Footer />
+      {/* <Header />
+      <HeroSection />
       <ProjectsSection />
       <TapeSection />
       <Referrals />
       <AboutSection />
       <ContactSection />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
