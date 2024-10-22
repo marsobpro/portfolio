@@ -29,7 +29,9 @@ const ProjectCardContent = ({ project }: { project: Project }) => {
               className="flex gap-2 text-sm text-white/50 md:text-base"
               key={result.title}
             >
-              <CheckCircleIcon className="size-5 md:size-6" />
+              <span className="flex items-start" style={{ flexShrink: 0 }}>
+                <CheckCircleIcon className="size-5 md:size-6" />
+              </span>
               <span>{result.title}</span>
             </li>
           ))}

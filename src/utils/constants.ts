@@ -178,7 +178,7 @@ export interface Project {
 
 export const portfolioProjects: Project[] = [
   {
-    company: "AI Chat Landing Page",
+    company: "Eye-catching layout",
     year: "2024",
     title: "AI Chat Landing Page",
     results: [
@@ -190,16 +190,15 @@ export const portfolioProjects: Project[] = [
     image: brainwaveScreen,
   },
   {
-    company: "Personal Portfolio",
+    company: "More about me",
     year: "2024",
-    title: "AI Chat Landing Page",
+    title: "Personal Portfolio",
     results: [
       {
-        title: "Built using TypeScript, Next.js and TailwindCSS",
+        title: "TypeScript, Next.js, TailwindCSS",
       },
       {
-        title:
-          "Features smooth animations and transitions, enhanced with Framer Motion",
+        title: "Smooth animations and transitions, Framer Motion",
       },
       { title: "Modern, eye-catching layout" },
     ],
@@ -207,7 +206,7 @@ export const portfolioProjects: Project[] = [
     image: portfolioScreen,
   },
   {
-    company: "Music Mentor",
+    company: "Find your music teacher",
     year: "2022",
     title: "Music Mentor",
     results: [
