@@ -5,12 +5,14 @@ import { NavItem } from "@/utils/constants";
 interface CustomLinkProps {
   item: NavItem;
   className?: string;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
 const CustomLink = memo(
   ({
     item: { isExternal, href, title },
     className,
+    onClick,
     children,
   }: PropsWithChildren<CustomLinkProps>) => {
     return isExternal ? (
@@ -24,7 +26,7 @@ const CustomLink = memo(
         {children}
       </a>
     ) : (
-      <Link className={className} href={href} passHref>
+      <Link className={className} href={href} passHref onClick={onClick}>
         {title}
         {children}
       </Link>

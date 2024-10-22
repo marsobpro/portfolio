@@ -40,12 +40,7 @@ export const navItems: NavItem[] = [
   { title: "Home", href: "#", isHighlighted: false },
   { title: "Projects", href: "#projects", isHighlighted: false },
   { title: "About", href: "#about", isHighlighted: false },
-  {
-    title: "Contact",
-    href: "https://www.linkedin.com/in/marcin-sobieraj/",
-    isExternal: true,
-    isHighlighted: true,
-  },
+  { title: "Contact", href: "#contact", isHighlighted: false },
 ];
 
 // Hero
@@ -202,7 +197,7 @@ export const portfolioProjects: Project[] = [
       },
       { title: "Modern, eye-catching layout" },
     ],
-    link: "https://msobierajportfolio.netlify.app",
+    link: "https://marcinsobieraj.dev/",
     image: portfolioScreen,
   },
   {
