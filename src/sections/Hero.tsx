@@ -66,7 +66,7 @@ export const HeroSection = () => {
       </h1>
       <p className="mt-4 text-center text-white/60 md:text-lg">
         I specialize in transforming designs into functional, high-performing
-        web applications. Let's discuss your next project.
+        web applications. Let&apos;s discuss your next project.
       </p>
     </div>
   );
@@ -82,7 +82,7 @@ export const HeroSection = () => {
         href="https://www.linkedin.com/in/marcin-sobieraj/"
       >
         <span>👋</span>
-        <span className=" font-semibold ">Let's Connect</span>
+        <span className=" font-semibold ">Let&apos;s Connect</span>
       </Button>
     </div>
   );

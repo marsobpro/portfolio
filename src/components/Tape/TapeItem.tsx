@@ -14,4 +14,5 @@ const TapeItem: React.FC<TapeItemProps> = memo(({ word }) => (
   </div>
 ));
 
+TapeItem.displayName = "TapeItem";
 export default TapeItem;

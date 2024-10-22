@@ -32,4 +32,5 @@ const CustomLink = memo(
   }
 );
 
+CustomLink.displayName = "CustomLink";
 export default CustomLink;
