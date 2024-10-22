@@ -62,7 +62,7 @@ export const HeroSection = () => {
   const HeroContent = () => (
     <div className="max-w-lg mx-auto">
       <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-        I'm Marcin.
+        I&apos;m Marcin.
         <br />I Build Exceptional User Experiences.
       </h1>
       <p className="mt-4 text-center text-white/60 md:text-lg">
