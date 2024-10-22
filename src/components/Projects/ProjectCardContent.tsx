@@ -45,7 +45,7 @@ const ProjectCardContent = ({ project }: { project: Project }) => {
       {/* Right grid col on large devices */}
       <div className="relative">
         <Image
-          className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+          className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl"
           src={image}
           alt={title}
         />

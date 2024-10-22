@@ -1,14 +1,12 @@
 import { StaticImageData } from "next/image";
 // Projects
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import musicMentorScreen from "@/assets/images/music-mentor.png";
+import brainwaveScreen from "@/assets/images/brainwave.png";
+import portfolioScreen from "@/assets/images/portfolio.png";
 // Referrals
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 // Hero
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import StarIcon from "@/assets/icons/star.svg";
@@ -180,56 +178,67 @@ export interface Project {
 
 export const portfolioProjects: Project[] = [
   {
-    company: "Acme Corp",
+    company: "AI Chat Landing Page",
+    year: "2024",
+    title: "AI Chat Landing Page",
+    results: [
+      { title: "Landing page project built using React and TailwindCSS" },
+      { title: "Parallax effect for both scroll and mouse movement" },
+      { title: "Bento Box design" },
+    ],
+    link: "https://reactaichat.netlify.app/",
+    image: brainwaveScreen,
+  },
+  {
+    company: "Personal Portfolio",
+    year: "2024",
+    title: "AI Chat Landing Page",
+    results: [
+      {
+        title: "Built using TypeScript, Next.js and TailwindCSS",
+      },
+      {
+        title:
+          "Features smooth animations and transitions, enhanced with Framer Motion",
+      },
+      { title: "Modern, eye-catching layout" },
+    ],
+    link: "https://reactaichat.netlify.app/",
+    image: portfolioScreen,
+  },
+  {
+    company: "Music Mentor",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "Music Mentor",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title: "Connects students with music teachers",
+      },
+      {
+        title: "Search and add lessons by instrument and location",
+      },
+      {
+        title: "User registration, login, and password reset",
+      },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://clever-rolypoly-d6ccde.netlify.app/",
+    image: musicMentorScreen,
   },
 ];
 
 // Tape
 export const tapeWords: string[] = [
-  "Performant",
-  "Accessible",
-  "Secure",
-  "Interactive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Optimized",
-  "Reliable",
-  "Efficient",
-  "Innovative",
+  "Dynamic",
+  "Intuitive",
+  "Modular",
+  "Seamless",
+  "Refined",
+  "Elegant",
+  "Collaborative",
+  "Adaptive",
+  "Thoughtful",
+  "Immersive",
+  "Helpful",
 ];
 
 // Referrals
@@ -323,8 +332,8 @@ export interface Hobby {
 export const hobbies: Hobby[] = [
   { title: "Badminton", emoji: "🏸", left: "5%", top: "5%" },
   { title: "Piano", emoji: "🎹", left: "50%", top: "5%" },
-  { title: "Swimmning", emoji: "🏊‍♀️", left: "10%", top: "35%" },
-  { title: "Prison Break", emoji: "👮", left: "60%", top: "45%" },
+  { title: "Swimming", emoji: "🏊‍♀️", left: "10%", top: "35%" },
+  { title: "Prison Break series", emoji: "👮", left: "60%", top: "45%" },
   { title: "Pilates", emoji: "🤸🏻‍♀️", left: "5%", top: "65%" },
   { title: "Carting", emoji: "🏎️", left: "50%", top: "30%" },
   { title: "Volunteering", emoji: "🫱🏻‍🫲🏽", left: "45%", top: "70%" },
@@ -360,7 +369,7 @@ export const books: Book[] = [
 
 // Footer
 
-const personalURLs = {
+export const personalURLs = {
   linkedin: "https://www.linkedin.com/in/marcin-sobieraj/",
   github: "https://github.com/marsobpro",
   email: "mailto:marsobpro@gmail.com",
