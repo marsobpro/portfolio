@@ -17,7 +17,7 @@ export const ProjectsSection = () => {
           <ProjectCardContent project={project} />
         </Card>
       )),
-    [portfolioProjects]
+    []
   );
 
   return (

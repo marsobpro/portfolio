@@ -253,13 +253,13 @@ export const referrals: Referral[] = [
   {
     name: "Karina Kupp",
     position: "Creator of Chill Subs",
-    text: `(...)  He's fantastic with frontend, <strong>always pays attention to the little details, responsiveness and animations</strong>, and is great at communication if anything needs clarification. </br></br> He also immediately felt part of the team, making everyone laugh from the first Slack exchanges and every daily meeting :) <br/></br> Working at a startup is an intense experience with plans and processes changing all the time, and I really appreciate Marcin being there for the ride and adapting and growing with us <3`,
+    text: `(...)  He&apos;s fantastic with frontend, <strong>always pays attention to the little details, responsiveness and animations</strong>, and is great at communication if anything needs clarification. </br></br> He also immediately felt part of the team, making everyone laugh from the first Slack exchanges and every daily meeting :) <br/></br> Working at a startup is an intense experience with plans and processes changing all the time, and I really appreciate Marcin being there for the ride and adapting and growing with us <3`,
     avatar: memojiAvatar1,
   },
   {
     name: "Natalia Filip",
     position: "Senior Recruiter",
-    text: "I had a real pleasure to work with Marcin. He is very proactive, communicative and open minded person. :)<br/><br/> (...) He has very creative approach, he's not afraid to take initiative. I definitely recommend Marcin, he is great colleague! :)",
+    text: "I had a real pleasure to work with Marcin. He is very proactive, communicative and open minded person. :)<br/><br/> (...) He has very creative approach, he&apos;s not afraid to take initiative. I definitely recommend Marcin, he is great colleague! :)",
     avatar: memojiAvatar2,
   },
   {
