@@ -24,10 +24,10 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <SectionHeader
-          title={"Featured projects"}
-          eyebrow={"Featured projects"}
+          title={"My projects"}
+          eyebrow={""}
           description={
-            " See how i transformed concepts into engaging digital experiences."
+            "See how I transformed concepts into engaging digital experiences."
           }
         />
 

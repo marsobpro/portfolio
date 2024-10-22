@@ -36,7 +36,7 @@ const ProjectCardContent = ({ project }: { project: Project }) => {
             </li>
           ))}
         </ul>
-        <a href={link} className="">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="">
           <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 px-6 md:w-auto">
             <span>Visit live site</span>
             <ArrowUp className="size-4" />
