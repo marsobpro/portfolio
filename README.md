@@ -1,7 +1,7 @@
 # Personal Portfolio
 👨‍💻 This is my Personal Portfolio project built in 2024, showcasing my development skills and a selection of my best work. The portfolio is designed to be modern, responsive, and visually engaging.
 
-Live demo: [CLICK](https://msobierajportfolio.netlify.app)
+Live demo: https://marcinsobieraj.dev/
 
 
 ## Table of Contents
