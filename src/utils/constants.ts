@@ -202,7 +202,7 @@ export const portfolioProjects: Project[] = [
       },
       { title: "Modern, eye-catching layout" },
     ],
-    link: "https://reactaichat.netlify.app/",
+    link: "https://msobierajportfolio.netlify.app",
     image: portfolioScreen,
   },
   {
