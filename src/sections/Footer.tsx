@@ -7,17 +7,10 @@ const FooterContent = () => (
     <div className="text-white/40">&copy; 2024. All rights reserved.</div>
     <nav className="flex flex-col md:flex-row items-center gap-8">
       {footerLinks.map(item => (
-        // <a
-        //
-        //   href={href}
-        // >
-        //   <span className="font-semibold">{title}</span>
-        //
-        // </a>
-        //             <CustomLink item={item} className={className} key={item.title} />
         <CustomLink
           item={item}
           className="inline-flex items-center gap-1.5 cursor-pointer"
+          key={item.title}
         >
           <ArrowUpRightIcon className="size-4" />
         </CustomLink>
